@@ -1,0 +1,8 @@
+.navbar .manualactive {
+    padding-bottom: 4px;
+    border-bottom: 3px solid #848080;
+}
+
+.manualbackground {
+    background-color: red;
+}

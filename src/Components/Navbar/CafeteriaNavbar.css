@@ -1,0 +1,17 @@
+.navbar .line {
+    padding: 0px 20px;
+    padding-bottom: 4px;
+    margin-right: 12px;
+    margin-left: 12px;
+    
+}
+
+.navbar .manualborder {
+    border-right: 3px solid #e60e0e;
+
+    border-bottom: 3px solid #848080;
+}
+
+.stall-border {
+    border-bottom: 3px solid #848080;
+}
