@@ -4,9 +4,10 @@ import App from "./App.jsx";
 import "./index.css";
 import ItemContextProvider from "./Context/ItemContext";
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   
-  <ItemContextProvider>
-    <App />
-  </ItemContextProvider>
+    <ItemContextProvider>
+      <App />
+    </ItemContextProvider>
 );
