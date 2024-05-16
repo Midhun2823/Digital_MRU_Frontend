@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../Components/Header/Header'
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   
