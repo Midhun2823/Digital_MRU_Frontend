@@ -6,7 +6,7 @@ import { Outlet, Routes, useNavigate } from "react-router-dom";
 const Cafeteria = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    navigate("/cafeteria/");
+    navigate("/cafeteria");
   }, []);
   return (
     <div>
