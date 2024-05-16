@@ -8,7 +8,6 @@ export const ItemContext = createContext();
 const ItemContextProvider = (props) => {
   const [all_items, setAllItems] = useState([]);
   const [cartItems, setCartItems] = useState({});
-  // const url = process.env.BACKEND_URL;
   const url = "https://digital-mru-backend.onrender.com";
   const [token, setToken] = useState("");
 
