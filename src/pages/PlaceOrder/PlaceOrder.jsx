@@ -517,7 +517,7 @@ const PlaceOrder = () => {
                         </select>
                       </div>
                       <div>
-                        {data.building ? (
+                        {data.building && data.deliverytoclass ? (
                           <select
                             name="floor"
                             className="form-select mb-2"
