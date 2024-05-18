@@ -38,6 +38,7 @@ const PlaceOrder = () => {
     room: "",
     designation: "",
     phonenumber: "",
+    payment:"",
   });
 
   // useEffect(() => {
@@ -327,13 +328,17 @@ const PlaceOrder = () => {
     let response = await axios.post(url + "/api/order/place", orderData, {
       headers: { token },
     });
-    if (response.data.success) {
-      // we will get session url
-      const { session_url } = response.data;
-      window.location.replace(session_url);
-      console.log(orderItems);
+    if (orderData.address.payment === "Card") {
+      if (response.data.success) {
+        // we will get session url
+        const { session_url } = response.data;
+        window.location.replace(session_url);
+        console.log(orderItems);
+      } else {
+        alert("Errorr");
+      }
     } else {
-      alert("Error");
+      navigate("/myorders");
     }
   };
 
@@ -583,6 +588,17 @@ const PlaceOrder = () => {
                       placeholder="Enter Phone Number"
                       required
                     />
+                    <select
+                      name="payment"
+                      className="form-select mb-2"
+                      value={data.payment}
+                      onChange={onChangeHandler}
+                    >
+                      <option >Select Mode of payment</option>
+                      <option value="Card">Card</option>
+                      <option value="Cash On Delivery">Cash On Delivery</option>
+                      <option value="UPI" disabled>UPI</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -620,12 +636,21 @@ const PlaceOrder = () => {
                         </tr>
                       </tbody>
                     </table>
-                    <button
-                      type="submit"
-                      className=" text-danger fw-bold btn  btn-outline-warning border border-warning border-4 fs-5"
-                    >
-                      Proceed to Payment
-                    </button>
+                    {data.payment === "Card" ? (
+                      <button
+                        type="submit"
+                        className=" text-danger fw-bold btn  btn-outline-warning border border-warning border-4 fs-5"
+                      >
+                        Proceed to Payment
+                      </button>
+                    ) : (
+                      <button
+                        type="submit"
+                        className=" text-danger fw-bold btn  btn-outline-warning border border-warning border-4 fs-5"
+                      >
+                        Proceed to Place Order
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

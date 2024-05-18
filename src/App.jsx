@@ -8,7 +8,7 @@ import Cafeteria from "./Components/Cafeteria/Cafeteria";
 import Stationary from "./Components/Stationary/Stationary";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import DisplayCategory from "./pages/DisplayCategory/DisplayCategory";
-import CafeteriaMenu from "./Components/Cafeteria/CafeteriaMenu";
+
 import Footer from "./Components/Footer/Footer";
 import LoginPopUp from "./Components/LoginPopUp/LoginPopUp";
 import Profile from "./Components/Profile/Profile";
@@ -17,6 +17,7 @@ import MyOrders from "./pages/MyOrders/MyOrders";
 // import DisplayCategory from './pages/DisplayCategory'
  import { ToastContainer } from "react-toastify";
  import "react-toastify/dist/ReactToastify.css";
+import ExploreMenu from "./Components/ExploreMenu/ExploreMenu";
 
 
 
@@ -33,7 +34,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cafeteria" element={<Cafeteria />}>
-              <Route path="/cafeteria/" element={<CafeteriaMenu />} />
+              <Route
+                path="/cafeteria/"
+                element={<ExploreMenu Type="Canteen" />}
+              />
               <Route
                 path="/cafeteria/continentalcoffee"
                 element={<DisplayCategory stall_name="continentalcoffee" />}
@@ -60,7 +64,41 @@ const App = () => {
               />
             </Route>
 
-            <Route path="/stationary" element={<Stationary />} />
+            <Route path="/stationary" element={<Stationary />}>
+              <Route
+                path="/stationary/"
+                element={<ExploreMenu Type="Stationary" />}
+              />
+              <Route
+                path="/stationary/Books"
+                element={<DisplayCategory stall_name="Books" />}
+              />
+              <Route
+                path="/stationary/Writing_Materials"
+                element={<DisplayCategory stall_name="Writing_Materials" />}
+              />
+              <Route
+                path="/stationary/Records"
+                element={<DisplayCategory stall_name="Records" />}
+              />
+              <Route
+                path="/stationary/Sheets"
+                element={<DisplayCategory stall_name="Sheets" />}
+              />
+              <Route
+                path="/stationary/Paper_Goods"
+                element={<DisplayCategory stall_name="Paper_Goods" />}
+              />
+              <Route
+                path="/stationary/Items"
+                element={<DisplayCategory stall_name="Items" />}
+              />
+
+              <Route
+                path="/stationary/Printouts"
+                element={<DisplayCategory stall_name="Printouts" />}
+              />
+            </Route>
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/cart" element={<Cart />} />

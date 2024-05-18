@@ -26,6 +26,7 @@ export const category_items = [
 
 export const menu_List = [
   {
+    menu_Type: "Canteen",
     menu_name: "Continental Coffee",
     menu_image: img,
     menu_category: [
@@ -38,29 +39,102 @@ export const menu_List = [
     ],
   },
   {
+    menu_Type: "Canteen",
     menu_name: "Sips",
     menu_image: img,
-    menu_category: ["Shakes", "Mocktails", "Lassi", "Natural Juice", "Tea & Coffee"],
+    menu_category: [
+      "Shakes",
+      "Mocktails",
+      "Lassi",
+      "Natural Juice",
+      "Tea & Coffee",
+    ],
   },
   {
+    menu_Type: "Canteen",
     menu_name: "Burger King",
     menu_image: img,
     menu_category: ["Veg", "Non Veg"],
   },
   {
+    menu_Type: "Canteen",
     menu_name: "Hakka wok",
     menu_image: img,
     menu_category: ["Rice", "Noodles", "Combos Veg", "Combos Non Veg"],
   },
   {
+    menu_Type: "Canteen",
     menu_name: "Five Star",
     menu_image: img,
     menu_category: ["Chicken", "Veg Items", "Snacks"],
   },
   {
+    menu_Type: "Canteen",
     menu_name: "Tea Wonders",
     menu_image: img,
-    menu_category: ["Cakes", "Ice Creams", "Chocolates", "Biscuits", "Cool Drinks","Tea & Coffee", "Others"],
+    menu_category: [
+      "Cakes",
+      "Ice Creams",
+      "Chocolates",
+      "Biscuits",
+      "Cool Drinks",
+      "Tea & Coffee",
+      "Others",
+    ],
+  },
+  {
+    menu_Type: "Stationary",
+    menu_name: "Books",
+    menu_image: img,
+    menu_category: ["Long Books", "Short Books", "Medium Books"],
+  },
+  {
+    menu_Type: "Stationary",
+    menu_name: "Writing Materials",
+    menu_image: img,
+    menu_category: ["Pens", "Pencils", "Color_Materials"],
+  },
+  {
+    menu_Type: "Stationary",
+    menu_name: "Records",
+    menu_image: img,
+    menu_category: ["R20", "R22", "R23"],
+  },
+  {
+    menu_Type: "Stationary",
+    menu_name: "Sheets",
+    menu_image: img,
+    menu_category: ["A4 Size", "A Charts"],
+  },
+  {
+    menu_Type: "Stationary",
+    menu_name: "Paper_Goods",
+    menu_image: img,
+    menu_category: [
+      "Letter Paper",
+      "Envelopes",
+      "Greeting Cards",
+    ],
+  },
+  {
+    menu_Type: "Stationary",
+    menu_name: "Items",
+    menu_image: img,
+    menu_category: [
+      "Files",
+      "Clips",
+      "Smart Gadgets",
+      "All Items",
+    ],
+  },
+  {
+    menu_Type: "Stationary",
+    menu_name: "Printouts",
+    menu_image: img,
+    menu_category: [
+      "A4 Sheet",
+      "Thick Paper",
+    ],
   },
 ];
 
@@ -451,6 +525,19 @@ let all_items = [
     old_price: 89,
     des: "Blue Mojito is ......",
     item_time: 10,
+    available: true,
+  },
+  {
+    _id: 30,
+    name: "Glue Sticks",
+    type: "Stationary",
+    stall_name: "Items",
+    category: "Others",
+    image: img,
+    new_price: 69,
+    old_price: 89,
+    des: "Glue Sticks are ......",
+    item_time: 0,
     available: true,
   },
 ];

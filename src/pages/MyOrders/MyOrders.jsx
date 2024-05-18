@@ -29,7 +29,10 @@ const MyOrders = () => {
       <div>
         {data.map((order, index) => {
           return (
-            <div key={index} className="row  border border-warning border-2 rounded-4 my-4 mx-1">
+            <div
+              key={index}
+              className="row  border border-warning border-2 rounded-4 my-4 mx-1"
+            >
               <div className="col-md-2">
                 <img
                   src={Parcel_Icon}
@@ -38,26 +41,33 @@ const MyOrders = () => {
                 />
               </div>
               <div className="col-md-3 mt-2">
-                  {order.items.map((item, index) => {
-                    if (index === order.items.length - 1) {
-                      return item.name + " x " + item.quantity;
-                    } else {
-                      return item.name + " x " + item.quantity + ", ";
-                    }
-                  })}
+                {order.items.map((item, index) => {
+                  if (index === order.items.length - 1) {
+                    return item.name + " x " + item.quantity;
+                  } else {
+                    return item.name + " x " + item.quantity + ", ";
+                  }
+                })}
               </div>
-              <div className="col-md-1 mt-2">
-                <i>Rupees:</i> {order.amount}/-
+              <div className="col-md-2 mt-2">
+              <div><i>Delivery Amount:</i> {order.delivery}/-</div>
+              <div><i>Rupees:</i> {order.amount}/-</div>
+                
+                
               </div>
               <div className="col-md-1 mt-2">
                 <i>Items:</i> {order.items.length}
               </div>
-              <div className="col-md-3 mt-2">
-                
-                  <span>&#x25cf;</span> <b>{order.status}</b>
+              <div className="col-md-2 mt-2">
+                <span>&#x25cf;</span> <b>{order.status}</b>
               </div>
               <div className="col-md-2 mt-2">
-                <button onClick={fetchOrder} className="btn btn-outline-success my-2">Track Order</button>
+                <button
+                  onClick={fetchOrder}
+                  className="btn btn-outline-success my-2"
+                >
+                  Track Order
+                </button>
               </div>
             </div>
           );

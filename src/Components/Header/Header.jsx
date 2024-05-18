@@ -97,11 +97,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div>
-        <h2>U cant place order what you need from our University in Online</h2>
-        <p>mifdiadnasd</p>
-        <button>View Menu</button>
-      </div>
+      
     </div>
   );
 };
