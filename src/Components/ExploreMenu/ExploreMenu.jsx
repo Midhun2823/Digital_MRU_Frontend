@@ -25,14 +25,15 @@ const ExploreMenu = ({Type}) => {
           {menu_List.map((ele, index) => {
             if (ele.menu_Type === Type){
             return (
+              
               <div className="col-md-4 p-3">
-                <Tilt
+                <center><Tilt
                   options={defaultOptions}
                   style={{ height: 250, width: 250 }}
                 >
                   <div
                     key={index}
-                    className="card border border-warning border-2 "
+                    className="card border border-warning border-2"
                     style={{ width: "18rem;" }}
                   >
                     <img
@@ -42,7 +43,7 @@ const ExploreMenu = ({Type}) => {
                       width="100"
                     />
 
-                    <div class="btn-group dropup m-1">
+                    <div class="btn-group dropup m-1 ">
                       <button className="btn bg-danger bg-opacity-50 fw-bold">
                         {ele.menu_name}
                       </button>
@@ -67,7 +68,7 @@ const ExploreMenu = ({Type}) => {
 
                     
                   </div>
-                </Tilt>
+                </Tilt></center>
               </div>
             );
             }

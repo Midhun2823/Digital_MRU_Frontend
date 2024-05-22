@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
 import Header from '../../Components/Header/Header'
 import { useNavigate } from "react-router-dom";
-import LatestEvents from '../../Components/LatestEvents/LatestEvents';
+import LatestEvents from '../LastestEvents/LatestEvents';
+import PopularEvents from '../PopularEvents/PopularEvents';
+
 
 const Home = () => {
   
@@ -14,6 +16,7 @@ const Home = () => {
     <div>
       <Header />
       <LatestEvents/>
+      <PopularEvents/>
     </div>
   )
 }

@@ -7,97 +7,95 @@ const Header = () => {
   return (
     <div>
       <div>
-        <div id="carouselExampleDark" className="carousel carousel-dark slide">
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active" data-bs-interval="10000">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner border border-dark mt-1 p-2">
+            <div class="carousel-item active " data-bs-interval="12000">
               <img
                 src={MRU_Cafeteria}
                 className="d-block w-100 px-4 pt-1 rounded-pill"
                 alt="1035 X 475px"
               />
-              <div className="carousel-caption d-none d-md-block ">
-                <h5>Cafeteria</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
+              <div className="carousel-caption d-none d-md-block bg-secondary bg-opacity-75 rounded-4 border border-2 ">
+                <div className="fs-4 fw-bold text-center text-dark text-decoration-underline">
+                  Cafeteria
+                </div>
+                <p
+                  className="fw-bold text-dark mx-2"
+                  style={{ textAlign: "justify" }}
+                >
+                  The benefits of having cafeteria in our University include
+                  providing a gathering place, offering unique food and drink
+                  options, and providing a convenient location for students to
+                  relax and work.
                 </p>
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="8000">
               <img
                 src={MRU_Cafeteria1}
                 className="d-block w-100 px-4 pt-1 rounded-pill"
                 alt="..."
               />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
+              <div className="carousel-caption d-none d-md-block  bg-primary bg-opacity-75 rounded-4 border border-2 ">
+                <div className="fs-4 fw-bold text-center text-dark text-decoration-underline">
+                  Cafeteria
+                </div>
+                <p
+                  className="fw-bold text-dark mx-2"
+                  style={{ textAlign: "justify" }}
+                >
+                  The benefits of having cafeteria in our University include
+                  providing a gathering place, offering unique food and drink
+                  options, and providing a convenient location for students to
+                  relax and work.
                 </p>
               </div>
             </div>
-            <div className="carousel-item">
+            <div class="carousel-item" data-bs-interval="6000">
               <img
                 src={MRU_Stationary}
                 className="d-block w-100  px-4 pt-1 rounded-pill"
                 alt="..."
               />
-              <div className="carousel-caption d-none d-md-block">
-                <h5 className="text-danger">Stationary</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
+              <div className="carousel-caption d-none d-md-block  bg-info bg-opacity-75 rounded-4 border border-2 ">
+                <div className="fs-4 fw-bold text-center text-dark text-decoration-underline">
+                  Stationery
+                </div>
+                <p
+                  className="fw-bold text-dark m-2"
+                  style={{ textAlign: "justify" }}
+                >
+                  The benefits of having Stationery in our University include
+                  providing the students with essential tools to jot down notes,
+                  tackle problems, and express their thoughts on paper.
                 </p>
               </div>
             </div>
           </div>
           <button
-            className="carousel-control-prev"
+            class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselExampleInterval"
             data-bs-slide="prev"
           >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
           <button
-            className="carousel-control-next"
+            class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselExampleInterval"
             data-bs-slide="next"
           >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
-      
     </div>
   );
 };

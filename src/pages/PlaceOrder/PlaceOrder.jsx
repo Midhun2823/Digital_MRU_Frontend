@@ -347,7 +347,7 @@ const PlaceOrder = () => {
     if (!token) {
       // When ever the token is not avaiable this if bolck will be excueted
       // we navigate to cart page
-      toast.error("Please Login Your to Account!......");
+      toast.error("Please Login to your Account!......");
       navigate("/cart");
     } else if (getTotalPriceAfterDiscountPrice() === 0) {
       toast.error("Please Add the items to cart!......");

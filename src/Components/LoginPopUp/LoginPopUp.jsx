@@ -173,8 +173,11 @@ const LoginPopUp = ({ setShowLogin }) => {
   console.log(currentLoginState + " currentLoginState");
   console.log(currentState + " currentState");
   return (
-    <div className="login-popup bg-primary bg-opacity-25">
-      <form onSubmit={onLogin} className="login-popup-container">
+    <div className="login-popup">
+      <form
+        onSubmit={onLogin}
+        className="login-popup-container border border-dark border-4"
+      >
         <div className="position-relative">
           <h1>{currentState}</h1>
 

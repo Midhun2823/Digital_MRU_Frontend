@@ -10,10 +10,11 @@ const Footer = () => {
         <div className="col-md-4 p-4">
           <img src={LOGO} width="120" className="rounded mb-4" />
           <p style={{ textAlign: "justify" }}>
-            Vite aims to address these issues by leveraging new advancements in
-            the ecosystem: the availability of native ES modules in the browser,
-            and the rise of JavaScript tools written in compile-to-native
-            languages.
+            Malla Reddy University is offering industry-focused specialised
+            Undergraduate and Postgraduate courses with the aim of providing
+            Quality Higher Education on par with International standards. It
+            persistently seeks and adopts innovative methods to improve the
+            quality of higher education on a consistent basis.
           </p>
           <div className="hstack">
             <img src={Linkedin_Icon} width="40" className="m-2" />
@@ -29,7 +30,7 @@ const Footer = () => {
             <p className="text-dark text-opacity-50">Upskill</p>
           </div>
         </div>
-       
+
         <div className="col-md-4 p-4">
           <h2 className="fw-bold text-decoration-underline">Contact US</h2>
           <div className="mt-4">
@@ -37,8 +38,10 @@ const Footer = () => {
             <p>digitalmru@gmail.com</p>
           </div>
         </div>
-<hr/>
-        <p className="text-center">Copyright @ 2024 SSH-AN ADaptive InnovationS</p>
+        <hr />
+        <p className="text-center">
+          Copyright @ 2024 SSH-AN ADaptive InnovationS
+        </p>
       </div>
     </div>
   );

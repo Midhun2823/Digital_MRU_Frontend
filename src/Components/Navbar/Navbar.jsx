@@ -100,7 +100,7 @@ const Navbar = ({ setShowLogin }) => {
                       : "nav-link me-1"
                   }
                 >
-                  Stationary
+                  Stationery
                 </Link>
               </li>
 

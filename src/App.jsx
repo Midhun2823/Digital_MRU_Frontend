@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 import Cart from "./pages/Cart/Cart";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Cafeteria from "./Components/Cafeteria/Cafeteria";
-import Stationary from "./Components/Stationary/Stationary";
+import Stationary from "./Components/Stationery/Stationery";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import DisplayCategory from "./pages/DisplayCategory/DisplayCategory";
 
@@ -18,6 +18,7 @@ import MyOrders from "./pages/MyOrders/MyOrders";
  import { ToastContainer } from "react-toastify";
  import "react-toastify/dist/ReactToastify.css";
 import ExploreMenu from "./Components/ExploreMenu/ExploreMenu";
+import Ads from "./Ads/Ads";
 
 
 
@@ -108,6 +109,7 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       </div>
+      <Ads />
       <Footer />
     </div>
   );

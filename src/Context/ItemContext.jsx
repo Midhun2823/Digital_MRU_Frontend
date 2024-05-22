@@ -1,15 +1,15 @@
 import React, { createContext, useEffect, useState } from "react";
-// import { all_items } from "../Data/Data";
+import { all_items } from "../Data/Data";
 import { discount } from "../Data/Data";
 import axios from "axios";
 
 export const ItemContext = createContext();
 
 const ItemContextProvider = (props) => {
-  const [all_items, setAllItems] = useState([]);
+  // const [all_items, setAllItems] = useState([]);
   const [cartItems, setCartItems] = useState({});
-  const url = "https://digital-mru-backend.onrender.com";
-  // const url = "http://localhost:4000";
+  // const url = "https://digital-mru-backend.onrender.com";
+  const url = "http://localhost:4000";
   const [token, setToken] = useState("");
 
   const addToCart = async (itemId) => {
@@ -134,10 +134,14 @@ const ItemContextProvider = (props) => {
     // so we add this function in useEffect
   };
 
-  const loadCartData = async (token) =>{
-    const response = await axios.post(url + "/api/cart/get", {}, {headers:{token}})
-    setCartItems(response.data.cartData)
-  }
+  const loadCartData = async (token) => {
+    const response = await axios.post(
+      url + "/api/cart/get",
+      {},
+      { headers: { token } }
+    );
+    setCartItems(response.data.cartData);
+  };
 
   useEffect(() => {
     // why we are adding is clearly explained in this function definetion
@@ -145,7 +149,7 @@ const ItemContextProvider = (props) => {
       await fetchFoodItems();
       if (localStorage.getItem("token")) {
         setToken(localStorage.getItem("token")); // when the token is avaiable we will set the token in this state so by this if we reload the page also we can access the same token
-        await loadCartData(localStorage.getItem("token")) // token is key name
+        await loadCartData(localStorage.getItem("token")); // token is key name
       }
     }
     loadData();
@@ -153,6 +157,7 @@ const ItemContextProvider = (props) => {
 
   const contextValue = {
     all_items,
+    
     cartItems,
     setCartItems,
     addToCart,
