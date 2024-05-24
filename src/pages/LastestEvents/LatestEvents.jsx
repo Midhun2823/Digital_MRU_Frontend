@@ -4,6 +4,8 @@ import Event_Img_2 from "../../assets/Event_Img_2.jpg";
 import Event_Img_3 from "../../assets/Event_Img_3.jpg";
 import Event_Img_4 from "../../assets/Event_Img_4.jpg";
 
+import "./LastestEvents.css"
+
 const LatestEvents = () => {
   return (
     <div className="border border-4 border-dark rounded rounded-2  mt-4">
@@ -14,7 +16,7 @@ const LatestEvents = () => {
       </div>
       {/* <hr className=" border border-dark border-2 opacity-100" /> */}
       <div className="row p-2 ">
-        <div className="col-md-3 p-3">
+        <div className="col-md-3 box p-4">
           <img
             className="rounded rounded-4"
             src={Event_Img_1}
@@ -23,7 +25,7 @@ const LatestEvents = () => {
             height="100%"
           />
         </div>
-        <div className="col-md-3 p-3">
+        <div className="col-md-3 box p-4">
           <img
             className="rounded rounded-4"
             src={Event_Img_2}
@@ -32,7 +34,7 @@ const LatestEvents = () => {
             height="100%"
           />
         </div>
-        <div className="col-md-3 p-3">
+        <div className="col-md-3 box p-4">
           <img
             className="rounded rounded-4"
             src={Event_Img_3}
@@ -41,7 +43,7 @@ const LatestEvents = () => {
             height="100%"
           />
         </div>
-        <div className="col-md-3 p-3">
+        <div className="col-md-3 box p-4">
           <img
             className="rounded rounded-4"
             src={Event_Img_4}

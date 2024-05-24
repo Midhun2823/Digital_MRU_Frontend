@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-import { all_items } from "../Data/Data";
+// import { all_items } from "../Data/Data";
 import { discount } from "../Data/Data";
 import axios from "axios";
 
@@ -8,8 +8,8 @@ export const ItemContext = createContext();
 const ItemContextProvider = (props) => {
   // const [all_items, setAllItems] = useState([]);
   const [cartItems, setCartItems] = useState({});
-  // const url = "https://digital-mru-backend.onrender.com";
-  const url = "http://localhost:4000";
+  const url = "https://digital-mru-backend.onrender.com";
+  // const url = "http://localhost:4000";
   const [token, setToken] = useState("");
 
   const addToCart = async (itemId) => {
@@ -157,7 +157,7 @@ const ItemContextProvider = (props) => {
 
   const contextValue = {
     all_items,
-    
+
     cartItems,
     setCartItems,
     addToCart,
