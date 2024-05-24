@@ -6,7 +6,7 @@ import axios from "axios";
 export const ItemContext = createContext();
 
 const ItemContextProvider = (props) => {
-  // const [all_items, setAllItems] = useState([]);
+  const [all_items, setAllItems] = useState([]);
   const [cartItems, setCartItems] = useState({});
   const url = "https://digital-mru-backend.onrender.com";
   // const url = "http://localhost:4000";
