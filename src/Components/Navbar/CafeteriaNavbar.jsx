@@ -23,7 +23,7 @@ const CafeteriaNavbar = () => {
           </div>
           <img src={Right_Arrow} alt="-->" width="32" className="mx-3" />
           <button
-            className="navbar-toggler"
+            className="navbar-toggler mt-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -36,7 +36,7 @@ const CafeteriaNavbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li
-                className="nav-item"
+                className="nav-item mt-2"
                 onClick={() => setstall("continentalcoffee")}
               >
                 <Link
@@ -50,7 +50,7 @@ const CafeteriaNavbar = () => {
                   Continental Coffee
                 </Link>
               </li>
-              <li className="nav-item" onClick={() => setstall("sips")}>
+              <li className="nav-item  mt-2" onClick={() => setstall("sips")}>
                 <Link
                   to="/cafeteria/sips"
                   className={
@@ -62,7 +62,7 @@ const CafeteriaNavbar = () => {
                   Sips
                 </Link>
               </li>
-              <li className="nav-item" onClick={() => setstall("burgerking")}>
+              <li className="nav-item  mt-2" onClick={() => setstall("burgerking")}>
                 <Link
                   to="/cafeteria/burgerking"
                   className={
@@ -74,7 +74,7 @@ const CafeteriaNavbar = () => {
                   Burger King
                 </Link>
               </li>
-              <li className="nav-item" onClick={() => setstall("hakkawok")}>
+              <li className="nav-item  mt-2" onClick={() => setstall("hakkawok")}>
                 <Link
                   to="/cafeteria/hakkawok"
                   className={
@@ -86,7 +86,7 @@ const CafeteriaNavbar = () => {
                   Hakka wok
                 </Link>
               </li>
-              <li className="nav-item" onClick={() => setstall("fivestar")}>
+              <li className="nav-item  mt-2" onClick={() => setstall("fivestar")}>
                 <Link
                   to="/cafeteria/fivestar"
                   className={
@@ -98,7 +98,7 @@ const CafeteriaNavbar = () => {
                   Five Star
                 </Link>
               </li>
-              <li className="nav-item" onClick={() => setstall("teawonders")}>
+              <li className="nav-item  mt-2" onClick={() => setstall("teawonders")}>
                 <Link
                   to="/cafeteria/teawonders"
                   className={

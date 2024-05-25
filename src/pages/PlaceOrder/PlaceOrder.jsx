@@ -39,6 +39,7 @@ const PlaceOrder = () => {
     designation: "",
     phonenumber: "",
     payment:"",
+    canceledorderpayment:false
   });
 
   // useEffect(() => {

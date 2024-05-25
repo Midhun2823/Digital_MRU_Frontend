@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Ads = () => {
   return (
@@ -11,17 +11,27 @@ const Ads = () => {
         </div>
         {/* <hr className=" border border-dark border-2 opacity-100" /> */}
         <div className="row p-2 ">
-          <div className="col-md-6 text-center">
-            Student Needs
+          <div className="col-md-6">
+            <div className=" text-center bg-secondary bg-opacity-25 rounded-5 m-2 p-2">
+              <h1 className="fw-bold text-decoration-underline">Student Needs</h1>
+              <p className="lead fw-bold">(Mobile Application)</p>
+
+              <div className="lead fw-bold">Coming Soon......</div>
+            </div>
           </div>
-          <div className="col-md-6 text-center">
-            Home Made Store
+          <div className="col-md-6">
+            <div className=" text-center bg-secondary bg-opacity-25 rounded-5 m-2 p-2">
+              <h1 className="fw-bold text-decoration-underline">Home Made Store</h1>
+              <p className="lead fw-bold">(Mobile Application)</p>
+
+              <div className="lead fw-bold">Coming Soon......</div>
+            </div>
+            
           </div>
-          
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Ads
+export default Ads;

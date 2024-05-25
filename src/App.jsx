@@ -24,11 +24,13 @@ import Ads from "./Ads/Ads";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
+  
 
   return (
     <div>
       <ToastContainer />
       {showLogin ? <LoginPopUp setShowLogin={setShowLogin} /> : <></>}
+      
       <div className="container">
         <BrowserRouter basename="/">
           <Navbar setShowLogin={setShowLogin} />
@@ -105,7 +107,10 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/order" element={<PlaceOrder />} />
             <Route path="/verify" element={<Verify />} />
-            <Route path="/myorders" element={<MyOrders />} />
+            <Route
+              path="/myorders"
+              element={<MyOrders  />}
+            />
           </Routes>
         </BrowserRouter>
       </div>

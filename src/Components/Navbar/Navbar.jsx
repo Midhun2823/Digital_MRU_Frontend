@@ -75,7 +75,7 @@ const Navbar = ({ setShowLogin }) => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li
                 onClick={() => setmenu("cafeteria")}
-                className="nav-item fw-bolder"
+                className="nav-item fw-bolder mt-1"
               >
                 <Link
                   to="/cafeteria"
@@ -90,7 +90,7 @@ const Navbar = ({ setShowLogin }) => {
               </li>
               <li
                 onClick={() => setmenu("stationary")}
-                className="nav-item fw-bolder"
+                className="nav-item fw-bolder mt-1"
               >
                 <Link
                   to="/stationary"
@@ -104,14 +104,14 @@ const Navbar = ({ setShowLogin }) => {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item mt-1">
                 <a className="nav-link disabled me-1" aria-disabled="true">
                   Upskill
                 </a>
               </li>
               <li
                 onClick={() => setmenu("contactus")}
-                className="nav-item fw-bolder"
+                className="nav-item fw-bolder mt-1"
               >
                 <Link
                   to="/contactus"
@@ -129,8 +129,8 @@ const Navbar = ({ setShowLogin }) => {
                 onClick={() => setmenu("cart")}
                 className={
                   menu === "cart"
-                    ? "bg-secondary bg-opacity-50 rounded-pill"
-                    : ""
+                    ? "bg-secondary bg-opacity-50 rounded-pill mt-2"
+                    : "mt-2"
                 }
               >
                 <div className="d-flex me-4 my-1 ps-3" role="search">
@@ -160,8 +160,8 @@ const Navbar = ({ setShowLogin }) => {
                   onClick={() => setmenu("profile")}
                   className={
                     menu === "profile"
-                      ? "bg-secondary bg-opacity-50 rounded-pill nav-item dropdown px-2 hstack text-center"
-                      : "nav-item dropdown px-2 hstack text-center"
+                      ? "bg-secondary bg-opacity-50 rounded-pill nav-item dropdown px-2 hstack text-center mt-2"
+                      : "nav-item dropdown px-2 hstack text-center mt-2"
                   }
                 >
                   <Link className="nav-link " to="/profile">
@@ -178,7 +178,10 @@ const Navbar = ({ setShowLogin }) => {
                     aria-expanded="false"
                   ></div>
                   <ul className="dropdown-menu bg-secondary bg-opacity-25 border-dark border-2 px-2">
-                    <li onClick={()=>navigate('/myorders')} className="hstack btn btn-outline-danger">
+                    <li
+                      onClick={() => navigate("/myorders")}
+                      className="hstack btn btn-outline-danger"
+                    >
                       <img
                         className="ms-4 bg-danger bg-opacity-75 rounded-pill p-1"
                         width="40"
@@ -191,7 +194,10 @@ const Navbar = ({ setShowLogin }) => {
                     <li>
                       <hr className="dropdown-divider mx-2" />
                     </li>
-                    <li onClick={logout} className="hstack btn btn-outline-danger">
+                    <li
+                      onClick={logout}
+                      className="hstack btn btn-outline-danger"
+                    >
                       <img
                         className="ms-4 bg-danger bg-opacity-75 rounded p-1"
                         width="36"

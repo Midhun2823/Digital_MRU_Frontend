@@ -24,7 +24,7 @@ const StationaryNavbar = () => {
             </div>
             <img src={Right_Arrow} alt="-->" width="32" className="mx-3" />
             <button
-              className="navbar-toggler"
+              className="navbar-toggler mt-2"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -39,7 +39,7 @@ const StationaryNavbar = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item" onClick={() => setstall("Books")}>
+                <li className="nav-item  mt-2" onClick={() => setstall("Books")}>
                   <Link
                     to="/stationary/Books"
                     className={
@@ -52,7 +52,7 @@ const StationaryNavbar = () => {
                   </Link>
                 </li>
                 <li
-                  className="nav-item"
+                  className="nav-item  mt-2"
                   onClick={() => setstall("Writing_Materials")}
                 >
                   <Link
@@ -66,7 +66,7 @@ const StationaryNavbar = () => {
                     Writing Materials
                   </Link>
                 </li>
-                <li className="nav-item" onClick={() => setstall("Records")}>
+                <li className="nav-item  mt-2" onClick={() => setstall("Records")}>
                   <Link
                     to="/stationary/Records"
                     className={
@@ -78,7 +78,7 @@ const StationaryNavbar = () => {
                     Records
                   </Link>
                 </li>
-                <li className="nav-item" onClick={() => setstall("Sheets")}>
+                <li className="nav-item  mt-2" onClick={() => setstall("Sheets")}>
                   <Link
                     to="/stationary/Sheets"
                     className={
@@ -91,7 +91,7 @@ const StationaryNavbar = () => {
                   </Link>
                 </li>
                 <li
-                  className="nav-item"
+                  className="nav-item  mt-2"
                   onClick={() => setstall("Paper_Goods")}
                 >
                   <Link
@@ -105,7 +105,7 @@ const StationaryNavbar = () => {
                     Paper Goods
                   </Link>
                 </li>
-                <li className="nav-item" onClick={() => setstall("Items")}>
+                <li className="nav-item  mt-2" onClick={() => setstall("Items")}>
                   <Link
                     to="/stationary/Items"
                     className={
@@ -119,7 +119,7 @@ const StationaryNavbar = () => {
                 </li>
 
                 <li
-                  className="nav-item"
+                  className="nav-item  mt-2"
                   onClick={() => setstall("Printouts")}
                   disabled
                 >
