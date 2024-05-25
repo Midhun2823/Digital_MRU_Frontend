@@ -214,9 +214,9 @@ const LoginPopUp = ({ setShowLogin }) => {
             <span className="input-group-text rounded-end-2" id="basic-addon2">
               @mallareddyuniversity.ac.in
             </span>
-            <div id="emailHelp" className="form-text ms-1">
+{/*             <div id="emailHelp" className="form-text ms-1">
               We'll never share your email with anyone else.
-            </div>
+            </div> */}
           </div>
           {currentState === "Sign Up" ? (
             <div className="bg-secondary bg-opacity-25 rounded p-1 mb-2">
