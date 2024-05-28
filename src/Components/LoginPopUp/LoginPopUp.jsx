@@ -2,15 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import Cross_Icon_For_Login from "../../assets/Cross_Icon_For_Login.png";
 import "./LoginPopUp.css";
 import { ItemContext } from "../../Context/ItemContext";
-import axios from "axios"
+import axios from "axios";
 import { toast } from "react-toastify";
 
 const LoginPopUp = ({ setShowLogin }) => {
-
-  const{url,setToken} = useContext(ItemContext)
+  const { url, setToken } = useContext(ItemContext);
 
   const [currentState, setCurrentState] = useState("Login");
-  const [currentLoginState, setCurrentLoginState] = useState("Login");
 
   // const [selectedSchool, setSelectedSchool] = useState("");
   // const [selectedCource, setSelectedCource] = useState("");
@@ -37,49 +35,45 @@ const LoginPopUp = ({ setShowLogin }) => {
     setData((data) => ({ ...data, [name]: value }));
   };
 
-  
-  
   // When ever the data is updated this fuction will be excueted
   // useEffect(() => {
   //   console.log(data);
   // }, [data]);
-  
+
   // For user login we create function
   const onLogin = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
     //now we create the logic to call the apis
     // to call the api we need axios support in frontend
     // create instance or the url
-    let newUrl =url;
-    if(currentState === "Login") {
-      newUrl += "/api/user/login"
-    } else{
-      newUrl += "/api/user/register"
+    let newUrl = url;
+    if (currentState === "Login") {
+      newUrl += "/api/user/login";
+    } else {
+      newUrl += "/api/user/register";
     }
 
     // call the api
     // this url works in any situation like login or register
-    const response = await axios.post(newUrl, data)
+    const response = await axios.post(newUrl, data);
 
     if (response.data.success) {
-      // if it comes to here it means we logged in or registered in 
-      // we will get one token 
-      setToken(response.data.token)
-      // save this token in local storage 
+      // if it comes to here it means we logged in or registered in
+      // we will get one token
+      setToken(response.data.token);
+      // save this token in local storage
 
       toast.success("Logged In Successfully");
-      localStorage.setItem("token", response.data.token)
-      localStorage.setItem("user", response.data.user)
+      localStorage.setItem("token", response.data.token);
+      localStorage.setItem("user", response.data.user);
       window.location.reload();
 
-      setShowLogin(false)
+      setShowLogin(false);
     } else {
       toast.error(response.data.message);
     }
-  } 
-
-
+  };
 
   // Details of Customer Profession
   const Schools = [
@@ -173,7 +167,6 @@ const LoginPopUp = ({ setShowLogin }) => {
   // const handleDesignationChange = (event) => {
   //   setSelectedDesignation(event.target.value);
   // };
-  console.log(currentLoginState + " currentLoginState");
   console.log(currentState + " currentState");
   return (
     <div className="login-popup">
@@ -217,6 +210,9 @@ const LoginPopUp = ({ setShowLogin }) => {
             <span className="input-group-text rounded-end-2" id="basic-addon2">
               @mallareddyuniversity.ac.in
             </span>
+            {/* <div id="emailHelp" className="form-text ms-1">
+              We'll never share your email with anyone else.
+            </div> */}
           </div>
           {currentState === "Sign Up" ? (
             <div className="bg-secondary bg-opacity-25 rounded p-1 mb-2">
@@ -370,102 +366,56 @@ const LoginPopUp = ({ setShowLogin }) => {
           <input type="checkbox" className="p-5" required></input>
           <p className="m-2">Accept terms and conditions</p>
         </div>
-        {currentState === "Login" || currentState === "Business Login" ? (
-          <p>
-            Create a new account?{" "}
-            <span
-              className="text-danger fw-bold fs-6 text-decoration-underline"
-              onClick={() => {
-                setCurrentState("Sign Up");
-                setCurrentLoginState("Sign Up");
-              }}
-            >
-              Click here
-            </span>
-          </p>
+        {currentState === "Login" ? (
+          <>
+            {" "}
+            <p>
+              Create a new account?{" "}
+              <span
+                className="text-danger fw-bold fs-6 text-decoration-underline"
+                onClick={() => {
+                  setCurrentState("Sign Up");
+                }}
+              >
+                Click here
+              </span>
+            </p>{" "}
+            <p>
+              For Business Login?{" "}
+              <a
+                className="text-danger fw-bold fs-6 text-decoration-underline"
+                href="https://digital-mru-admin.vercel.app/"
+              >
+                Click here
+              </a>
+            </p>
+          </>
         ) : (
           <></>
         )}
-        {currentState === "Sign Up" || currentState === "Business Sign Up" ? (
-          <p>
-            Already have an account?{" "}
-            <span
-              className="text-danger fw-bold fs-6 text-decoration-underline"
-              onClick={() => {
-                setCurrentState("Login");
-                setCurrentLoginState("Login");
-              }}
-            >
-              Login here
-            </span>
-          </p>
-        ) : (
-          <></>
-        )}
-        {currentState === "Login" && currentLoginState === "Login" ? (
-          <p>
-            Login to Business account?{" "}
-            <span
-              className="text-danger fw-bold fs-6 text-decoration-underline"
-              onClick={() => {
-                setCurrentLoginState("Business Login");
-                setCurrentState("Business Login");
-              }}
-            >
-              Click here
-            </span>
-          </p>
-        ) : (
-          <></>
-        )}
-        {currentState === "Business Login" &&
-        currentLoginState === "Business Login" ? (
-          <p>
-            Login to User account?{" "}
-            <span
-              className="text-danger fw-bold fs-6 text-decoration-underline"
-              onClick={() => {
-                setCurrentLoginState("Login");
-                setCurrentState("Login");
-              }}
-            >
-              Click here
-            </span>
-          </p>
-        ) : (
-          <></>
-        )}
-
-        {currentState === "Sign Up" && currentLoginState === "Sign Up" ? (
-          <p>
-            Sign Up to Business account?{" "}
-            <span
-              className="text-danger fw-bold fs-6 text-decoration-underline"
-              onClick={() => {
-                setCurrentLoginState("Business Sign Up");
-                setCurrentState("Business Sign Up");
-              }}
-            >
-              Click here
-            </span>
-          </p>
-        ) : (
-          <></>
-        )}
-        {currentState === "Business Sign Up" &&
-        currentLoginState === "Business Sign Up" ? (
-          <p>
-            Sign up to User account?{" "}
-            <span
-              className="text-danger fw-bold fs-6 text-decoration-underline"
-              onClick={() => {
-                setCurrentLoginState("Sign Up");
-                setCurrentState("Sign Up");
-              }}
-            >
-              Click here
-            </span>
-          </p>
+        {currentState === "Sign Up" ? (
+          <>
+            <p>
+              Already have an account?{" "}
+              <span
+                className="text-danger fw-bold fs-6 text-decoration-underline"
+                onClick={() => {
+                  setCurrentState("Login");
+                }}
+              >
+                Login here
+              </span>
+            </p>{" "}
+            <p>
+              For Business Sign Up?{" "}
+              <a
+                className="text-danger fw-bold fs-6 text-decoration-underline"
+                href="https://digital-mru-admin.vercel.app/"
+              >
+                Click here
+              </a>
+            </p>
+          </>
         ) : (
           <></>
         )}

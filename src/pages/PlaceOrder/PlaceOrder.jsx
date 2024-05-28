@@ -73,7 +73,7 @@ const PlaceOrder = () => {
   };
 
   const totalAmount = () => {
-    return getTotalPriceAfterDiscountPrice() + deliveryAmount();
+    return Math.round(getTotalPriceAfterDiscountPrice() + deliveryAmount());
   };
 
   // const [selectedSchool, setSelectedSchool] = useState("");
@@ -339,6 +339,7 @@ const PlaceOrder = () => {
         alert("Errorr");
       }
     } else {
+    window.scroll(0, 0); 
       navigate("/myorders");
     }
   };

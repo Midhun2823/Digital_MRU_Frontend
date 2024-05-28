@@ -1,7 +1,7 @@
 .maincontainer {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 200px;
 }
 
 .thecard {
@@ -13,7 +13,7 @@
 }
 
 .thecard:hover {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .thefront {
@@ -23,8 +23,8 @@
   backface-visibility: hidden;
   background: rgb(203, 203, 212);
   color: aquamarine;
+  border-radius: 10px;
 }
-
 
 .theback {
   position: absolute;
@@ -34,4 +34,8 @@
   background: black;
   color: rgb(243, 17, 17);
   transform: rotateY(180deg);
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border-radius: 6px;
 }

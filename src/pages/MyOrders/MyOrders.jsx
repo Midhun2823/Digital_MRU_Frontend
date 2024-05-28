@@ -3,6 +3,8 @@ import { ItemContext } from "../../Context/ItemContext";
 import axios from "axios";
 import Parcel_Icon from "../../assets/Parcel_Icon.png";
 import Cross_Icon_For_Login from "../../assets/Cross_Icon_For_Login.png";
+import Success_Tick from "../../assets/Success_Tick.png";
+import Error_Canceled from "../../assets/Error_Canceled.png";
 
 import "./ConfirmCancel.css";
 
@@ -140,9 +142,13 @@ const MyOrders = () => {
                       <div className="col-md-2">
                         <img
                           src={Parcel_Icon}
-                          width="120"
-                          className="bg-danger rounded my-2 p-2 border border-dark border-2"
+                          width="100%"
+                          height="120px"
+                          className="bg-danger rounded my-2 p-2 px-4 border border-dark border-2"
                         />
+                        <p className="text-center py-1 bg-dark text-light fw-bold">
+                          {order.orderId}
+                        </p>
                       </div>
                       <div className="col-md-3 mt-2">
                         {order.items.map((item, index) => {
@@ -169,13 +175,17 @@ const MyOrders = () => {
                       </div>
                       {order.status === "Delivered" ? (
                         <div className="col-md-2 my-1 rounded-pill bg-dark">
-                          <p className="fs-5 fw-bold text-warning text-center p-2">Items Delivered Successfully</p>
+                          <p className="fs-5 pt-4 fw-bold text-warning text-center p-2">
+                            Items Delivered Successfully
+                            <img width="32" src={Success_Tick} />
+                          </p>
                         </div>
                       ) : (
                         <div className="col-md-2 mt-2 text-center">
                           {order.ordercanceled ? (
-                            <p className=" border border-5 border-dark  fw-bold fs-4 p-2 m-1 bg-secondary bg-opacity-75">
+                            <p className=" border border-5 border-dark  fw-bold fs-4 p-2 py-4 m-1 bg-secondary bg-opacity-75">
                               Order Canceled
+                              <img className="bg-dark rounded-pill" width="32" src={Error_Canceled} />
                             </p>
                           ) : (
                             <div>
@@ -188,8 +198,10 @@ const MyOrders = () => {
 
                               <button
                                 // onClick={() => cancelOrderHandler(order._id)}
-                                onClick={() => {setShowConfirmCancel(order)
-                                window.scroll(0,0)}}
+                                onClick={() => {
+                                  setShowConfirmCancel(order);
+                                  window.scroll(0, 0);
+                                }}
                                 className="btn btn-outline-danger my-2"
                               >
                                 Cancel Order

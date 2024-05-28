@@ -47,7 +47,7 @@ const ContactUs = () => {
                     </div>
                     <div class="card-body">
                       <p class="card-title fw-bold">
-                        MRUH (B.Tech CSE 3rd Year)
+                        MRUH (B.Tech CSE 3<sup>rd</sup> Year)
                       </p>
                       <p class="card-text lead">
                         Java | MERN | DSA | Python | Android | Angular | HTML |
@@ -101,7 +101,7 @@ const ContactUs = () => {
                     </div>
                     <div class="card-body">
                       <p class="card-title fw-bold">
-                        MRUH (B.Tech CSE 1st Year)
+                        MRUH (B.Tech CSE 1<sup>st</sup> Year)
                       </p>
                       <p class="card-text lead">
                         MERN | Python | Java | HTML | CSS | Bootstrap |
@@ -159,7 +159,7 @@ const ContactUs = () => {
                     </div>
                     <div class="card-body">
                       <p class="card-title fw-bold">
-                        MRUH (B.Tech CSE 3rd Year)
+                        MRUH (B.Tech CSE 3<sup>rd</sup> Year)
                       </p>
                       {/* <p class="card-text lead">
                         Java | MERN | DSA | Python | Android | Angular | HTML |
@@ -204,7 +204,7 @@ const ContactUs = () => {
                     </div>
                     <div class="card-body">
                       <p class="card-title fw-bold">
-                        MRUH (B.Tech CSE 1st Year)
+                        MRUH (B.Tech CSE 1<sup>st</sup> Year)
                       </p>
                       {/* <p class="card-text lead">
                         MERN | Python | Java | HTML | CSS | Bootstrap |
