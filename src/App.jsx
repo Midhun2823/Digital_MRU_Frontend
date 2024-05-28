@@ -30,7 +30,7 @@ const App = () => {
     <div>
       <ToastContainer />
       {showLogin ? <LoginPopUp setShowLogin={setShowLogin} /> : <></>}
-      
+
       <div className="container">
         <BrowserRouter basename="/">
           <Navbar setShowLogin={setShowLogin} />
@@ -73,33 +73,33 @@ const App = () => {
                 element={<ExploreMenu Type="Stationary" />}
               />
               <Route
-                path="/stationary/Books"
-                element={<DisplayCategory stall_name="Books" />}
+                path="/stationary/books"
+                element={<DisplayCategory stall_name="books" />}
               />
               <Route
-                path="/stationary/Writing_Materials"
-                element={<DisplayCategory stall_name="Writing_Materials" />}
+                path="/stationary/writingmaterials"
+                element={<DisplayCategory stall_name="writingmaterials" />}
               />
               <Route
-                path="/stationary/Records"
-                element={<DisplayCategory stall_name="Records" />}
+                path="/stationary/records"
+                element={<DisplayCategory stall_name="records" />}
               />
               <Route
-                path="/stationary/Sheets"
-                element={<DisplayCategory stall_name="Sheets" />}
+                path="/stationary/sheets"
+                element={<DisplayCategory stall_name="sheets" />}
               />
               <Route
-                path="/stationary/Paper_Goods"
-                element={<DisplayCategory stall_name="Paper_Goods" />}
+                path="/stationary/papergoods"
+                element={<DisplayCategory stall_name="papergoods" />}
               />
               <Route
-                path="/stationary/Items"
-                element={<DisplayCategory stall_name="Items" />}
+                path="/stationary/items"
+                element={<DisplayCategory stall_name="items" />}
               />
 
               <Route
-                path="/stationary/Printouts"
-                element={<DisplayCategory stall_name="Printouts" />}
+                path="/stationary/printouts"
+                element={<DisplayCategory stall_name="printouts" />}
               />
             </Route>
             <Route path="/contactus" element={<ContactUs />} />
@@ -107,10 +107,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/order" element={<PlaceOrder />} />
             <Route path="/verify" element={<Verify />} />
-            <Route
-              path="/myorders"
-              element={<MyOrders  />}
-            />
+            <Route path="/myorders" element={<MyOrders />} />
           </Routes>
         </BrowserRouter>
       </div>

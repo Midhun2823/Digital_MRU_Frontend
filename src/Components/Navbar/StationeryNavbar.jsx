@@ -39,11 +39,14 @@ const StationaryNavbar = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item  mt-2" onClick={() => setstall("Books")}>
+                <li
+                  className="nav-item  mt-2"
+                  onClick={() => setstall("books")}
+                >
                   <Link
-                    to="/stationary/Books"
+                    to="/stationary/books"
                     className={
-                      stall === "Books"
+                      stall === "books"
                         ? "nav-link line manualborder"
                         : "nav-link line"
                     }
@@ -53,12 +56,12 @@ const StationaryNavbar = () => {
                 </li>
                 <li
                   className="nav-item  mt-2"
-                  onClick={() => setstall("Writing_Materials")}
+                  onClick={() => setstall("writingmaterials")}
                 >
                   <Link
-                    to="/stationary/Writing_Materials"
+                    to="/stationary/writingmaterials"
                     className={
-                      stall === "Writing_Materials"
+                      stall === "writingmaterials"
                         ? "nav-link line manualborder"
                         : "nav-link line"
                     }
@@ -66,11 +69,14 @@ const StationaryNavbar = () => {
                     Writing Materials
                   </Link>
                 </li>
-                <li className="nav-item  mt-2" onClick={() => setstall("Records")}>
+                <li
+                  className="nav-item  mt-2"
+                  onClick={() => setstall("records")}
+                >
                   <Link
-                    to="/stationary/Records"
+                    to="/stationary/records"
                     className={
-                      stall === "Records"
+                      stall === "records"
                         ? "nav-link line manualborder"
                         : "nav-link line"
                     }
@@ -78,11 +84,14 @@ const StationaryNavbar = () => {
                     Records
                   </Link>
                 </li>
-                <li className="nav-item  mt-2" onClick={() => setstall("Sheets")}>
+                <li
+                  className="nav-item  mt-2"
+                  onClick={() => setstall("sheets")}
+                >
                   <Link
-                    to="/stationary/Sheets"
+                    to="/stationary/sheets"
                     className={
-                      stall === "Sheets"
+                      stall === "sheets"
                         ? "nav-link line manualborder"
                         : "nav-link line"
                     }
@@ -92,12 +101,12 @@ const StationaryNavbar = () => {
                 </li>
                 <li
                   className="nav-item  mt-2"
-                  onClick={() => setstall("Paper_Goods")}
+                  onClick={() => setstall("papergoods")}
                 >
                   <Link
-                    to="/stationary/Paper_Goods"
+                    to="/stationary/papergoods"
                     className={
-                      stall === "Paper_Goods"
+                      stall === "papergoods"
                         ? "nav-link line manualborder"
                         : "nav-link line"
                     }
@@ -105,11 +114,14 @@ const StationaryNavbar = () => {
                     Paper Goods
                   </Link>
                 </li>
-                <li className="nav-item  mt-2" onClick={() => setstall("Items")}>
+                <li
+                  className="nav-item  mt-2"
+                  onClick={() => setstall("items")}
+                >
                   <Link
-                    to="/stationary/Items"
+                    to="/stationary/items"
                     className={
-                      stall === "Items"
+                      stall === "items"
                         ? "nav-link line manualborder"
                         : "nav-link line"
                     }
@@ -120,13 +132,13 @@ const StationaryNavbar = () => {
 
                 <li
                   className="nav-item  mt-2"
-                  onClick={() => setstall("Printouts")}
+                  onClick={() => setstall("printouts")}
                   disabled
                 >
                   <Link
-                    to="/stationary/Printouts"
+                    to="/stationary/printouts"
                     className={
-                      stall === "Printouts"
+                      stall === "printouts"
                         ? "nav-link line manualborder"
                         : "nav-link line"
                     }

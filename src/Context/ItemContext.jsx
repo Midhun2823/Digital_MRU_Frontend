@@ -8,9 +8,10 @@ export const ItemContext = createContext();
 const ItemContextProvider = (props) => {
   const [all_items, setAllItems] = useState([]);
   const [cartItems, setCartItems] = useState({});
-  const url = "https://digital-mru-backend.onrender.com";
-  // const url = "http://localhost:4000";
+  // const url = "https://digital-mru-backend.onrender.com";
+  const url = import.meta.env.VITE_BACKEND_URL;
   const [token, setToken] = useState("");
+  const [userdetails, setUserDetails] = useState("");
 
   const addToCart = async (itemId) => {
     if (!cartItems[itemId]) {
@@ -150,10 +151,14 @@ const ItemContextProvider = (props) => {
       if (localStorage.getItem("token")) {
         setToken(localStorage.getItem("token")); // when the token is avaiable we will set the token in this state so by this if we reload the page also we can access the same token
         await loadCartData(localStorage.getItem("token")); // token is key name
+        const myObject = JSON.parse(localStorage.getItem("user"));
+        setUserDetails(myObject);
       }
     }
     loadData();
   }, []);
+
+  console.log(JSON.stringify(userdetails) + " userdetails");
 
   const contextValue = {
     all_items,
@@ -183,6 +188,7 @@ const ItemContextProvider = (props) => {
     url,
     token,
     setToken,
+    userdetails,
   };
 
   return (

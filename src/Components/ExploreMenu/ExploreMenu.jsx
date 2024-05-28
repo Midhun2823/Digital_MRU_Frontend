@@ -2,7 +2,7 @@ import React from "react";
 import { menu_List } from "../../Data/Data";
 import { Tilt } from "react-tilt";
 
-const ExploreMenu = ({Type}) => {
+const ExploreMenu = ({ Type }) => {
   const defaultOptions = {
     reverse: false, // reverse the tilt direction
     max: 35, // max tilt rotation (degrees)
@@ -23,54 +23,53 @@ const ExploreMenu = ({Type}) => {
       <div className="container">
         <div className="row">
           {menu_List.map((ele, index) => {
-            if (ele.menu_Type === Type){
-            return (
-              
-              <div className="col-md-4 p-3">
-                <center><Tilt
-                  options={defaultOptions}
-                  style={{ height: 250, width: 250 }}
-                >
-                  <div
-                    key={index}
-                    className="card border border-warning border-2"
-                    style={{ width: "18rem;" }}
-                  >
-                    <img
-                      src={ele.menu_image}
-                      className="card-img-top border border-warning border-top-0 border-start-0 border-end-0 border-2"
-                      alt="..."
-                      width="100"
-                    />
-
-                    <div class="btn-group dropup m-1 ">
-                      <button className="btn bg-danger bg-opacity-50 fw-bold">
-                        {ele.menu_name}
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
+            if (ele.menu_Type === Type) {
+              return (
+                <div className="col-md-4 p-3">
+                  <center>
+                    <Tilt
+                      options={defaultOptions}
+                      style={{ height: 250, width: 250 }}
+                    >
+                      <div
+                        key={index}
+                        className="card border border-warning border-2"
+                        style={{ width: "18rem;" }}
                       >
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        {ele.menu_category.map((name) => (
-                          <li>
-                            <a className="dropdown-item" >
-                              {name}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                        <div >
+                          <img
+                            src={ele.menu_image}
+                            className="card-img-top border border-warning border-top-0 border-start-0 border-end-0 border-2"
+                            alt="..."
+                            height="200px"
+                          />
+                        </div>
 
-                    
-                  </div>
-                </Tilt></center>
-              </div>
-            );
+                        <div class="btn-group dropup m-1 ">
+                          <button className="btn bg-danger bg-opacity-50 fw-bold">
+                            {ele.menu_name}
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            {ele.menu_category.map((name) => (
+                              <li>
+                                <a className="dropdown-item">{name}</a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </Tilt>
+                  </center>
+                </div>
+              );
             }
           })}
         </div>
@@ -80,3 +79,5 @@ const ExploreMenu = ({Type}) => {
 };
 
 export default ExploreMenu;
+
+// 226 X 174

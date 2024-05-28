@@ -110,7 +110,6 @@ const Header = () => {
           width="100%"
           height="100%"
           controls
-          autoPlay
         >
           <source src={MRUH} type="video/mp4" />
         </video></div>

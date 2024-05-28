@@ -70,6 +70,9 @@ const LoginPopUp = ({ setShowLogin }) => {
 
       toast.success("Logged In Successfully");
       localStorage.setItem("token", response.data.token)
+      localStorage.setItem("user", response.data.user)
+      window.location.reload();
+
       setShowLogin(false)
     } else {
       toast.error(response.data.message);
@@ -179,7 +182,7 @@ const LoginPopUp = ({ setShowLogin }) => {
         className="login-popup-container border border-dark border-4"
       >
         <div className="position-relative">
-          <h1>{currentState}</h1>
+          <h1 className="">{currentState}</h1>
 
           <img
             className="position-absolute top-0 end-0 hovermanual p-2"
@@ -214,9 +217,6 @@ const LoginPopUp = ({ setShowLogin }) => {
             <span className="input-group-text rounded-end-2" id="basic-addon2">
               @mallareddyuniversity.ac.in
             </span>
-            <div id="emailHelp" className="form-text ms-1">
-              We'll never share your email with anyone else.
-            </div>
           </div>
           {currentState === "Sign Up" ? (
             <div className="bg-secondary bg-opacity-25 rounded p-1 mb-2">

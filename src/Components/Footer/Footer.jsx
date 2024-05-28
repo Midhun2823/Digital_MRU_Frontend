@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="col-md-4 p-4">
-          <h2 className="fw-bold text-decoration-underline">Contact US</h2>
+          <h2 className="fw-bold text-decoration-underline">Contact Us</h2>
           <div className="mt-4">
             <p>+91 6300188045</p>
             <p>digitalmru@gmail.com</p>

@@ -14,19 +14,32 @@ const ItemStyleOne = (props) => {
 
   return (
     <div className="">
-      <div className="card" style={{ width: "18rem", height: "24rem" }}>
+      <div
+        className={
+          props.available
+            ? "card "
+            : "card bg-secondary bg-opacity-50"
+        }
+        style={{ width: "18rem", height: "24rem" }}
+      >
         <div className="maincontainer">
           <div className="thecard">
             <div className="thefront">
               <img
-                src={url +"/images/"+props.image}
+                src={url + "/images/" + props.image}
                 className="card-img-top"
                 alt="..."
                 height="200"
               />
             </div>
-            <div className="theback">
-              <p className="card-text fw-bold p-5">{props.des}</p>
+            <div className="theback text-center">
+              {props.available ? (
+                <p className="card-text fw-bold p-1">{props.des}</p>
+              ) : (
+                <p className="card-text fw-bold p-5 fs-2 text-decoration-underline  ">
+                  Out of stock
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -34,9 +47,15 @@ const ItemStyleOne = (props) => {
         <h5 className="card-title text-center fw-bold fs-4 mt-2">
           {props.name}
         </h5>
-        <ul className="list-group list-group-flush mx-2">
-          <li className="list-group-item">
-            <div className="py-2 ">
+        <ul className="list-group list-group-flush mx-2  ">
+          <li
+            className={
+              props.available
+                ? "list-group-item  "
+                : "list-group-item  bg-light bg-opacity-25 "
+            }
+          >
+            <div className="py-2  ">
               {props.category}
               {!cartItems[props.id] ? (
                 <img
@@ -66,7 +85,13 @@ const ItemStyleOne = (props) => {
               )}
             </div>
           </li>
-          <li className="list-group-item">
+          <li
+            className={
+              props.available
+                ? "list-group-item  "
+                : "list-group-item  bg-light bg-opacity-25 "
+            }
+          >
             <div className="d-flex row me-2">
               <div className="col-md-4 fw-bold text-success">
                 {props.new_price}/-
@@ -81,9 +106,16 @@ const ItemStyleOne = (props) => {
             </div>
           </li>
 
-          <li className="list-group-item  ">
+          <li
+            className={
+              props.available
+                ? "list-group-item  "
+                : "list-group-item  bg-light bg-opacity-25 "
+            }
+          >
             <div className="position-relative">
-              {props.available ? "InStock" : "Out Of Stock"}
+            <span className={props.available ? "text-warning fw-bold fs-5" : "text-danger fw-bold fs-5"}>{props.available ? "InStock" : "Out Of Stock"}</span>
+              
               <img
                 src={Item_Rating}
                 width="102"

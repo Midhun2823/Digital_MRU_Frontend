@@ -40,16 +40,20 @@ const DisplayCategory = (props) => {
           })
         )}
       </div> */}
-      <marquee className="my-3" behavior="scroll" direction="left">
+      <marquee
+        className=" bg-light p-1 border border-start-0 border-end-0 border-dark"
+        behavior="scroll"
+        direction="left"
+      >
         {uniques.map((name) =>
           all_items.map((ele, index) => {
             if (name === ele.category && props.stall_name === ele.stall_name) {
               return (
                 <img
-                  src={url+ "/images/"+ele.image}
+                  src={url + "/images/" + ele.image}
                   width="102"
                   height="102"
-                  className="rounded-pill me-5 border border-danger"
+                  className="rounded-pill me-5 border border-danger border-2"
                 />
               );
             } else {
@@ -79,7 +83,6 @@ const DisplayCategory = (props) => {
           )}
         </div>
       </div> */}
-
 
       <div className="container">
         <div className="row">

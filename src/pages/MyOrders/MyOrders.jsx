@@ -188,7 +188,8 @@ const MyOrders = () => {
 
                               <button
                                 // onClick={() => cancelOrderHandler(order._id)}
-                                onClick={() => setShowConfirmCancel(order)}
+                                onClick={() => {setShowConfirmCancel(order)
+                                window.scroll(0,0)}}
                                 className="btn btn-outline-danger my-2"
                               >
                                 Cancel Order

@@ -7,7 +7,19 @@
 //   "teawonders",
 // ];
 import img from "../assets/MRU_LOGO.png";
-import img1 from "../assets/Akka.jpg";
+import Continental_Coffee from "../assets/Continental_Coffee.png";
+import Burger_King from "../assets/Burger_King.png";
+import Hakka_Wok from "../assets/Hakka_Wok.png";
+import Five_Star from "../assets/Five_Star.png";
+import Tea_Wonders from "../assets/Tea_Wonders.png";
+import Sips from "../assets/Sips.jpg";
+import Books from "../assets/Books.png";
+import Writing_Materials from "../assets/Writing_Materials.png";
+import Sheets from "../assets/Sheets.png";
+import Paper_Goods from "../assets/Paper_Goods.png";
+import Items from "../assets/Items.png";
+import Printouts from "../assets/Printouts.png";
+import img1 from "../assets/Sips.jpg";
 
 export const category_items = [
   {
@@ -28,7 +40,7 @@ export const menu_List = [
   {
     menu_Type: "Canteen",
     menu_name: "Continental Coffee",
-    menu_image: img,
+    menu_image: Continental_Coffee,
     menu_category: [
       "WinterSpecial",
       "Noodles",
@@ -41,7 +53,7 @@ export const menu_List = [
   {
     menu_Type: "Canteen",
     menu_name: "Sips",
-    menu_image: img,
+    menu_image: Sips,
     menu_category: [
       "Shakes",
       "Mocktails",
@@ -53,25 +65,25 @@ export const menu_List = [
   {
     menu_Type: "Canteen",
     menu_name: "Burger King",
-    menu_image: img,
+    menu_image: Burger_King,
     menu_category: ["Veg", "Non Veg"],
   },
   {
     menu_Type: "Canteen",
     menu_name: "Hakka wok",
-    menu_image: img,
+    menu_image: Hakka_Wok,
     menu_category: ["Rice", "Noodles", "Combos Veg", "Combos Non Veg"],
   },
   {
     menu_Type: "Canteen",
     menu_name: "Five Star",
-    menu_image: img,
+    menu_image: Five_Star,
     menu_category: ["Chicken", "Veg Items", "Snacks"],
   },
   {
     menu_Type: "Canteen",
     menu_name: "Tea Wonders",
-    menu_image: img,
+    menu_image: Tea_Wonders,
     menu_category: [
       "Cakes",
       "Ice Creams",
@@ -85,13 +97,13 @@ export const menu_List = [
   {
     menu_Type: "Stationary",
     menu_name: "Books",
-    menu_image: img,
+    menu_image: Books,
     menu_category: ["Long Books", "Short Books", "Medium Books"],
   },
   {
     menu_Type: "Stationary",
     menu_name: "Writing Materials",
-    menu_image: img,
+    menu_image: Writing_Materials,
     menu_category: ["Pens", "Pencils", "Color_Materials"],
   },
   {
@@ -103,38 +115,26 @@ export const menu_List = [
   {
     menu_Type: "Stationary",
     menu_name: "Sheets",
-    menu_image: img,
+    menu_image: Sheets,
     menu_category: ["A4 Size", "A Charts"],
   },
   {
     menu_Type: "Stationary",
     menu_name: "Paper_Goods",
-    menu_image: img,
-    menu_category: [
-      "Letter Paper",
-      "Envelopes",
-      "Greeting Cards",
-    ],
+    menu_image: Paper_Goods,
+    menu_category: ["Letter Paper", "Envelopes", "Greeting Cards"],
   },
   {
     menu_Type: "Stationary",
     menu_name: "Items",
-    menu_image: img,
-    menu_category: [
-      "Files",
-      "Clips",
-      "Smart Gadgets",
-      "All Items",
-    ],
+    menu_image: Items,
+    menu_category: ["Files", "Clips", "Smart Gadgets", "All Items"],
   },
   {
     menu_Type: "Stationary",
     menu_name: "Printouts",
-    menu_image: img,
-    menu_category: [
-      "A4 Sheet",
-      "Thick Paper",
-    ],
+    menu_image: Printouts,
+    menu_category: ["A4 Sheet", "Thick Paper"],
   },
 ];
 
@@ -160,7 +160,7 @@ let all_items = [
     old_price: 70,
     des: "Tomato soup is ......",
     item_time: 25,
-    available: true,
+    available: false,
   },
 
   {
@@ -356,7 +356,7 @@ let all_items = [
     old_price: 89,
     des: "Vanilla Milk Shake is ......",
     item_time: 15,
-    available: true,
+    available: false,
   },
   {
     _id: 17,
