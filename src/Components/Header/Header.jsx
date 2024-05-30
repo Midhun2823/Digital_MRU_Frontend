@@ -26,12 +26,11 @@ const Header = () => {
                 </div>
                 <p
                   className="fw-bold text-dark mx-2"
-                  style={{ textAlign: "justify" }}
+                  style={{ textAlign: "center" }}
                 >
-                  The benefits of having cafeteria in our University include
-                  providing a gathering place, offering unique food and drink
-                  options, and providing a convenient location for students to
-                  relax and work.
+                  A university cafeteria offers students and staff a convenient
+                  place to purchase meals and snacks, often providing a variety
+                  of affordable and nutritious food options.
                 </p>
               </div>
             </div>
@@ -68,11 +67,11 @@ const Header = () => {
                 </div>
                 <p
                   className="fw-bold text-dark m-2"
-                  style={{ textAlign: "justify" }}
+                  style={{ textAlign: "center" }}
                 >
-                  The benefits of having Stationery in our University include
-                  providing the students with essential tools to jot down notes,
-                  tackle problems, and express their thoughts on paper.
+                  University stationery includes essential supplies like
+                  notebooks, pens, and folders, crucial for student's academic
+                  organization and productivity.
                 </p>
               </div>
             </div>
@@ -105,16 +104,17 @@ const Header = () => {
             </div>
           </div>
           {/* <hr className=" border border-dark border-2 opacity-100" /> */}
-          <div className="row p-2 "><video
-          className="rounded rounded-5"
-          width="100%"
-          height="100%"
-          controls
-        >
-          <source src={MRUH} type="video/mp4" />
-        </video></div>
+          <div className="row p-2 ">
+            <video
+              className="rounded rounded-5"
+              width="100%"
+              height="100%"
+              controls
+            >
+              <source src={MRUH} type="video/mp4" />
+            </video>
+          </div>
         </div>
-        
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const ExploreMenu = ({ Type }) => {
 
   return (
     <div className="text-center">
-      <h1 className="fw-bold border border-info border-4 rounded-5 rounded-top-0 m-3 p-1 fs-2">
+      <h1 className="fw-bold bg-danger text-light border border-dark border-4 rounded-5 rounded-top-0 m-3 p-1 fs-2">
         {Type} Menu
       </h1>
       <div className="container">
@@ -36,7 +36,7 @@ const ExploreMenu = ({ Type }) => {
                         className="card border border-warning border-2"
                         style={{ width: "18rem;" }}
                       >
-                        <div >
+                        <div>
                           <img
                             src={ele.menu_image}
                             className="card-img-top border border-warning border-top-0 border-start-0 border-end-0 border-2"

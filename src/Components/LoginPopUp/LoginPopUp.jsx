@@ -140,7 +140,20 @@ const LoginPopUp = ({ setShowLogin }) => {
   };
 
   const sections = {
-    CSE: ["Select the Section", "Alpha", "Beta", "Gamma", "Delta"],
+    CSE: [
+      "Select the Section",
+      "Alpha",
+      "Beta",
+      "Gamma",
+      "Delta",
+      "Omega",
+      "Epslion",
+    ],
+    CSE_AIML: ["Select the Section", "Alpha", "Beta", "Gamma", "Delta"],
+    CSE_DS: ["Select the Section", "Alpha", "Beta", "Gamma", "Delta"],
+    CSE_CS: ["Select the Section", "Alpha", "Beta", "Gamma", "Delta"],
+    CSE_IOT: ["Select the Section", "Alpha", "Beta", "Gamma", "Delta"],
+    IT: ["Select the Section", "Alpha", "Beta"],
   };
 
   const designation = [

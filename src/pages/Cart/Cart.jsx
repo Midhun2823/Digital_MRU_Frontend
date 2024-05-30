@@ -143,7 +143,8 @@ const Cart = () => {
               </tbody>
             </table>
             <button
-              onClick={() => navigate("/order")}
+              onClick={() => {navigate("/order")
+              window.scroll(0,0)}}
               className=" text-danger fw-bold btn  btn-outline-warning border border-warning border-4 fs-5"
             >
               Proceed to checkout

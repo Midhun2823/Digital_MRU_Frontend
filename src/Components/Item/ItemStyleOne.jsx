@@ -36,12 +36,12 @@ const ItemStyleOne = (props) => {
                     src={url + "/images/" + props.image}
                     className="card-img-top rounded rounded-bottom-0"
                     alt="..."
-                    height="200px"
+                    height="240px"
                   />
                 </div>
                 <div className="theback ">
                   {props.available ? (
-                    <p className="fw-bold p-1">{props.des}</p>
+                    <p className="fw-bold ">{props.des}</p>
                   ) : (
                     <p className="fw-bold p-5 fs-2 text-decoration-underline  ">
                       Out of stock
