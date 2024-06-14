@@ -64,7 +64,7 @@ const Cart = () => {
                     return (
                       <tr className="">
                         <td>
-                          <img src={url+"/images/"+item.image} width="120" />
+                          <img src={url+"/images/"+item.image} width="102" height="102"/>
                         </td>
                         <td className="pt-4">{item.name}</td>
                         <td className="pt-4">{item.new_price}/-</td>

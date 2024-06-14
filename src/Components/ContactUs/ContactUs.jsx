@@ -35,6 +35,25 @@ const ContactUs = () => {
               Contact Us
             </h1>
             <div className="row">
+              <div className="col-md-12 p-5 row">
+                <h1 className="col-md-4 ">
+                  <span className="fw-bold">Phone Number:</span>
+                </h1>
+                <h1 className="col-md-8 display-6">+91 6300188045</h1>
+                  <h1 className="col-md-4 fw-bold">Email: </h1>
+                  <a
+                    className=" col-md-8 display-6"
+                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=2111CS010283@mallareddyuniversity.ac.in"
+                  >
+                    2111CS010283@mallareddyuniversity.ac.in
+                  </a>
+                <a href="mailto:2111CS010283@mallareddyuniversity.ac.in">
+                  2111CS010283@mallareddyuniversity.ac.in
+                </a>
+              </div>
+              <h1 className="text-center text-decoration-underline mt-4">
+                Developed By
+              </h1>
               <div className="col-md-6 p-5">
                 <Tilt
                   options={defaultOptions}
@@ -136,69 +155,7 @@ const ContactUs = () => {
                 </Tilt>
               </div>
             </div>
-            <h1 className="text-center text-decoration-underline mt-4">
-              Under Guidance Of
-            </h1>
-            <div className="row">
-              <div className="col-md-12 p-5">
-                <Tilt
-                  options={defaultOptions}
-                  style={{ height: "100%", width: "100%" }}
-                >
-                  {" "}
-                  <div class="card text-center border border-dark border-2">
-                    <div class="card-header">
-                      <h4 className="fs-2 fw-bold">Dr. M. Santhosh Kumar</h4>
-                    </div>
-                    <div class="card-body">
-                      <p class="card-title lead">MRUH (Professor)</p>
-                      {/* <p class="card-text lead">
-                        Java | MERN | DSA | Python | Android | Angular | HTML |
-                        CSS | Bootstrap | JavaScript | Jetpack Compose
-                      </p>
-                      <span>
-                        <img width="32" src={Call_Icon} />{" "}
-                        <img width="36" src={Whatsapp_Icon} />
-                        +91 6300188045
-                      </span> */}
-                    </div>
-                    {/* <div class="card-footer text-body-secondary"></div> */}
-                  </div>
-                </Tilt>
-              </div>
-              {/* <div className="col-md-6 p-5">
-                <Tilt
-                  options={defaultOptions}
-                  style={{ height: "100%", width: "100%" }}
-                >
-                  <div
-                    class="card text-center border border-dark border-2"
-                    style={{ height: "100%", width: "100%" }}
-                  >
-                    <div class="card-header">
-                      <h4 className="fs-2 fw-bold">Harsha Sree M</h4>
-                    </div>
-                    <div class="card-body">
-                      <p class="card-title fw-bold">
-                        MRUH (B.Tech CSE 1<sup>st</sup> Year)
-                      </p>
-                      <p class="card-text lead">
-                        MERN | Python | Java | HTML | CSS | Bootstrap |
-                        JavaScript | DSA
-                      </p>
-                      <span>
-                        <img width="32" src={Call_Icon} />{" "}
-                        <img width="36" src={Whatsapp_Icon} />
-                        +91 6300188045
-                      </span>
-                    </div>
-                    <div class="card-footer text-body-secondary">
-                      
-                    </div>
-                  </div>
-                </Tilt>
-              </div> */}
-            </div>
+            
           </div>
         </div>
       ) : (
@@ -298,69 +255,7 @@ const ContactUs = () => {
                   </div>
                 </Tilt>
               </div>
-              <h1 className="text-center text-decoration-underline mt-4">
-                Under Guidance Of
-              </h1>
-              <div className="row">
-                <div className="col-md-12 p-5">
-                  <Tilt
-                    options={defaultOptions}
-                    style={{ height: "100%", width: "100%" }}
-                  >
-                    {" "}
-                    <div class="card text-center border border-dark border-2">
-                      <div class="card-header">
-                        <h4 className="fs-2 fw-bold">Dr. M. Santhosh Kumar</h4>
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title lead">MRUH (Professor)</p>
-                        {/* <p class="card-text lead">
-                        Java | MERN | DSA | Python | Android | Angular | HTML |
-                        CSS | Bootstrap | JavaScript | Jetpack Compose
-                      </p>
-                      <span>
-                        <img width="32" src={Call_Icon} />{" "}
-                        <img width="36" src={Whatsapp_Icon} />
-                        +91 6300188045
-                      </span> */}
-                      </div>
-                      {/* <div class="card-footer text-body-secondary"></div> */}
-                    </div>
-                  </Tilt>
-                </div>
-                {/* <div className="col-md-6 p-5">
-                <Tilt
-                  options={defaultOptions}
-                  style={{ height: "100%", width: "100%" }}
-                >
-                  <div
-                    class="card text-center border border-dark border-2"
-                    style={{ height: "100%", width: "100%" }}
-                  >
-                    <div class="card-header">
-                      <h4 className="fs-2 fw-bold">Harsha Sree M</h4>
-                    </div>
-                    <div class="card-body">
-                      <p class="card-title fw-bold">
-                        MRUH (B.Tech CSE 1<sup>st</sup> Year)
-                      </p>
-                      <p class="card-text lead">
-                        MERN | Python | Java | HTML | CSS | Bootstrap |
-                        JavaScript | DSA
-                      </p>
-                      <span>
-                        <img width="32" src={Call_Icon} />{" "}
-                        <img width="36" src={Whatsapp_Icon} />
-                        +91 6300188045
-                      </span>
-                    </div>
-                    <div class="card-footer text-body-secondary">
-                      
-                    </div>
-                  </div>
-                </Tilt>
-              </div> */}
-              </div>
+              
             </div>
           </div>
         </div>

@@ -35,13 +35,20 @@ const Footer = () => {
           <h2 className="fw-bold text-decoration-underline">Contact Us</h2>
           <div className="mt-4">
             <p>+91 6300188045</p>
-            <p>digitalmru@gmail.com</p>
+            <p>2111CS010283@mallareddyuniversity.ac.in</p>
           </div>
         </div>
         <hr />
         <p className="text-center">
           Copyright @ 2024 SSH-AN ADaptive InnovationS
         </p>
+        <a
+          className="text-center text-warning"
+          target="_blank"
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=sshinnovations2024@gmail.com"
+        >
+          sshinnovations2024@gmail.com
+        </a>
       </div>
     </div>
   );

@@ -148,6 +148,23 @@ let discount = [
   { coupoun_id: "MRUCSE", discount_for_coupoun: 2 },
 ];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let all_items = [
   {
     _id: 1,

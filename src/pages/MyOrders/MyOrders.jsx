@@ -185,7 +185,11 @@ const MyOrders = () => {
                           {order.ordercanceled ? (
                             <p className=" border border-5 border-dark  fw-bold fs-4 p-2 py-4 m-1 bg-secondary bg-opacity-75">
                               Order Canceled
-                              <img className="bg-dark rounded-pill" width="32" src={Error_Canceled} />
+                              <img
+                                className="bg-dark rounded-pill"
+                                width="32"
+                                src={Error_Canceled}
+                              />
                             </p>
                           ) : (
                             <div>
@@ -195,17 +199,26 @@ const MyOrders = () => {
                               >
                                 Track Order
                               </button>
-
-                              <button
-                                // onClick={() => cancelOrderHandler(order._id)}
-                                onClick={() => {
-                                  setShowConfirmCancel(order);
-                                  window.scroll(0, 0);
-                                }}
-                                className="btn btn-outline-danger my-2"
-                              >
-                                Cancel Order
-                              </button>
+                              {order.status === "Out for Delivery" ? (
+                                <button
+                                  // onClick={() => cancelOrderHandler(order._id)}
+                                  disabled
+                                  className="btn btn-outline-danger my-2"
+                                >
+                                  Cancel Order
+                                </button>
+                              ) : (
+                                <button
+                                  // onClick={() => cancelOrderHandler(order._id)}
+                                  onClick={() => {
+                                    setShowConfirmCancel(order);
+                                    window.scroll(0, 0);
+                                  }}
+                                  className="btn btn-outline-danger my-2"
+                                >
+                                  Cancel Order
+                                </button>
+                              )}
                             </div>
                           )}
                         </div>

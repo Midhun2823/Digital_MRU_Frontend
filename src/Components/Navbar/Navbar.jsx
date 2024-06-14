@@ -21,6 +21,7 @@ const Navbar = ({ setShowLogin }) => {
     // we have to remove the token
     toast.success("Logged out Successfully")
     localStorage.removeItem("token") // token is the key name which we assign while adding
+    localStorage.removeItem("user") // token is the key name which we assign while adding
     setToken("");
     // When the user gets logout we sen them to home page we use navigate hook
     navigate("/")
