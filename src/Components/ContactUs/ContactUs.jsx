@@ -65,8 +65,14 @@ const ContactUs = () => {
                       <h4 className="fs-2 fw-bold">Midhun Naga Sai M</h4>
                     </div>
                     <div class="card-body">
-                      <p class="card-title fw-bold">
+                      {/* <p class="card-title fw-bold">
                         MRUH (B.Tech CSE 3<sup>rd</sup> Year)
+                      </p> */}
+                      <p class="card-title fw-bold">
+                        MRUH - B.Tech CSE 
+                      </p>
+                      <p class="card-title fw-bold">
+                        Software Developer
                       </p>
                       <p class="card-text lead">
                         Java | MERN | DSA | Python | Android | Angular | HTML |
@@ -106,7 +112,7 @@ const ContactUs = () => {
                   </div>
                 </Tilt>
               </div>
-              <div className="col-md-6 p-5">
+              {/* <div className="col-md-6 p-5">
                 <Tilt
                   options={defaultOptions}
                   style={{ height: "100%", width: "100%" }}
@@ -153,7 +159,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </Tilt>
-              </div>
+              </div> */}
             </div>
             
           </div>
