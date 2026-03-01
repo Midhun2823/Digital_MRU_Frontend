@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ItemContext } from "../../Context/ItemContext";
 import ItemStyleOne from "../../Components/Item/ItemStyleOne";
 // import { category_items } from "../Data/Data";
@@ -13,6 +13,15 @@ const DisplayCategory = (props) => {
     ),
   ];
   console.log(uniques);
+   if (!all_items || all_items.length === 0) {
+       return (
+           <div className="text-center p-5">
+               <h4>Loading items...... </h4>
+               <h4>Please Try To Refresh......</h4>
+           </div>
+       );
+   }
+   useEffect(() =>{},[all_items])
 
   return (
     <div>
