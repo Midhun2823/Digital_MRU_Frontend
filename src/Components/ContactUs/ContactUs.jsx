@@ -203,14 +203,19 @@ const ContactUs = () => {
                                             </h4>
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-title fw-bold">
-                                                MRUH (B.Tech CSE 3<sup>rd</sup>{" "}
-                                                Year)
-                                            </p>
+                                            {/* <p class="card-title fw-bold">
+                        MRUH (B.Tech CSE 3<sup>rd</sup> Year)
+                      </p> */}
                                             {/* <p class="card-text lead">
                         Java | MERN | DSA | Python | Android | Angular | HTML |
                         CSS | Bootstrap | JavaScript | Jetpack Compose
                       </p> */}
+                                            <p class="card-title fw-bold">
+                                                MRUH - B.Tech CSE
+                                            </p>
+                                            <p class="card-title fw-bold">
+                                                Software Developer
+                                            </p>
                                             <span>
                                                 <img
                                                     width="32"
@@ -259,80 +264,51 @@ const ContactUs = () => {
                                     </div>
                                 </Tilt>
                             </div>
-                            <div className="col-md-6 p-5">
-                                <Tilt
-                                    options={defaultOptions}
-                                    style={{ height: "100%", width: "100%" }}
-                                >
-                                    <div
-                                        class="card text-center border border-dark border-2"
-                                        style={{
-                                            height: "100%",
-                                            width: "100%",
-                                        }}
-                                    >
-                                        <div class="card-header">
-                                            <h4 className="fs-2 fw-bold">
-                                                Harsha Sree M
-                                            </h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-title fw-bold">
-                                                MRUH (B.Tech CSE 1<sup>st</sup>{" "}
-                                                Year)
-                                            </p>
-                                            {/* <p class="card-text lead">
+                            {/* <div className="col-md-6 p-5">
+                <Tilt
+                  options={defaultOptions}
+                  style={{ height: "100%", width: "100%" }}
+                >
+                  <div
+                    class="card text-center border border-dark border-2"
+                    style={{ height: "100%", width: "100%" }}
+                  >
+                    <div class="card-header">
+                      <h4 className="fs-2 fw-bold">Harsha Sree M</h4>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title fw-bold">
+                        MRUH (B.Tech CSE 1<sup>st</sup> Year)
+                      </p>
+                      {/* <p class="card-text lead">
                         MERN | Python | Java | HTML | CSS | Bootstrap |
                         JavaScript | DSA
                       </p> */}
-                                            <span>
-                                                <img
-                                                    width="32"
-                                                    src={Call_Icon}
-                                                />{" "}
-                                                <img
-                                                    width="36"
-                                                    src={Whatsapp_Icon}
-                                                />
-                                                +91 6300188045
-                                            </span>
-                                        </div>
-                                        <div class="card-footer text-body-secondary">
-                                            <a
-                                                onClick={signUp}
-                                                className="card-link"
-                                            >
-                                                <img
-                                                    src={Linkedin_Icon}
-                                                    alt="LinkedIn"
-                                                    width="60"
-                                                />
-                                            </a>
-                                            <a
-                                                onClick={signUp}
-                                                className="card-link"
-                                            >
-                                                <img
-                                                    src={Github_Icon}
-                                                    alt="Github"
-                                                    width="60"
-                                                />
-                                            </a>
-                                            <a
-                                                onClick={signUp}
-                                                className="card-link"
-                                            >
-                                                <img
-                                                    className="rounded rounded-2"
-                                                    src={LinkTree_Icon}
-                                                    alt="LinkTree"
-                                                    width="60"
-                                                />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </Tilt>
-                            </div>
+                            {/* <span>
+                        <img width="32" src={Call_Icon} />{" "}
+                        <img width="36" src={Whatsapp_Icon} />
+                        +91 6300188045
+                      </span>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                      <a onClick={signUp} className="card-link">
+                        <img src={Linkedin_Icon} alt="LinkedIn" width="60" />
+                      </a>
+                      <a onClick={signUp} className="card-link">
+                        <img src={Github_Icon} alt="Github" width="60" />
+                      </a>
+                      <a onClick={signUp} className="card-link">
+                        <img
+                          className="rounded rounded-2"
+                          src={LinkTree_Icon}
+                          alt="LinkTree"
+                          width="60"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </Tilt>
+              </div> */}
                         </div>
                     </div>
                 </div>
